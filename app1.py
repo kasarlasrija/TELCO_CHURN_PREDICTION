@@ -21,7 +21,7 @@ st.set_page_config(page_title="Telco Churn Prediction", layout="centered")
 st.title("📊 Telco Customer Churn Prediction (XGBoost)")
 
 # ---------------- Load Dataset ----------------
-DATA_PATH = r"C:\Users\kasar\Downloads\telco1.csv"
+DATA_PATH = "telco1.csv"
 
 @st.cache_data
 def load_data():
@@ -146,3 +146,4 @@ st.info(
     "This app uses **XGBoost**, an advanced **ensemble boosting algorithm**, "
     "commonly used in real-world ML competitions and industry churn systems."
 )
+
